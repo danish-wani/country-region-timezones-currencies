@@ -1,26 +1,36 @@
-# country-region-timezones-currencies
+
+# Country Region Timezones and Currencies
 
 This repo contains JSON dump of all region specific timezones throughout all the countries, along with currency and daylight saving info.
 
 
-example:
-{
-  "America/Montreal": {
-        "country": "Canada",
-        "timezones": [
-            {
-                "local_timezone": "EDT",
-                "timezone_name": "Eastern Standard Time",
-                "timezone": "UTC-05:00",
-                "is_dst": true
-            }
-        ],
-        "currencies": {
-            "CAD": {
-                "name": "Canadian dollar",
-                "symbol": "$"
-            }
+## Usage/Examples
+
+```json
+"America/Los_Angeles": {
+    "country": "United States of America",
+    "timezones": [
+        {
+            "local_timezone": "PDT",
+            "timezone_name": "Pacific Daylight Time",
+            "timezone": "UTC-07:00",
+            "is_dst": true
         },
-        "country_code": "CA"
-  }
+        {
+            "local_timezone": "PST",
+            "timezone_name": "Pacific Standard Time",
+            "timezone": "UTC-08:00",
+            "is_dst": false
+        }
+    ],
+    "currencies": {
+        "USD": {
+            "name": "United States dollar",
+            "symbol": "$"
+        }
+    },
+    "country_code": "US"
 }
+```
+
+
